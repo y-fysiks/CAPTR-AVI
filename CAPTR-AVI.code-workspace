@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "MPU",
+			"path": "MCU1/MPU"
+		},
+		{
+			"name": "TELEM",
+			"path": "MCU1/TELEM"
+		},
+		{
+			"name": "NAV",
+			"path": "MCU2/NAV"
+		},
+		{
+			"name": "CAM",
+			"path": "MCU2/CAM"
+		}
+	],
+	"settings": {}
+}
