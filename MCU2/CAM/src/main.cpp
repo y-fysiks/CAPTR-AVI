@@ -1,16 +1,16 @@
-#include "main.h"
+#include "main.hpp"
 
 void LED_Init();
 
 int main(void)
 {
     HAL_Init();
-    LED_Init(); // Remove the parentheses after LED_Init
+    LED_Init();
 
     while (1)
     {
         HAL_GPIO_TogglePin(LED_GPIO_PORT, LED_PIN);
-        HAL_Delay(1000);
+        HAL_Delay(2000);
     }
 }
 
@@ -25,7 +25,45 @@ void LED_Init()
   HAL_GPIO_Init(LED_GPIO_PORT, &GPIO_InitStruct);
 }
 
-void SysTick_Handler(void)
+extern "C" void SysTick_Handler(void)
 {
   HAL_IncTick();
+}
+
+extern "C" void NMI_Handler(void)
+{
+}
+
+extern "C" void HardFault_Handler(void)
+{
+  while (1) {}
+}
+
+
+extern "C" void MemManage_Handler(void)
+{
+  while (1) {}
+}
+
+extern "C" void BusFault_Handler(void)
+{
+  while (1) {}
+}
+
+extern "C" void UsageFault_Handler(void)
+{
+  while (1) {}
+}
+
+extern "C" void SVC_Handler(void)
+{
+}
+
+
+extern "C" void DebugMon_Handler(void)
+{
+}
+
+extern "C" void PendSV_Handler(void)
+{
 }
