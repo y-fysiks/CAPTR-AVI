@@ -60,10 +60,10 @@ extern "C" void SVC_Handler(void)
 }
 
 
-void DebugMon_Handler(void)
+extern "C" void DebugMon_Handler(void)
 {
 }
 
-void PendSV_Handler(void)
+extern "C" void PendSV_Handler(void)
 {
 }
