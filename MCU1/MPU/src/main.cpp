@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.hpp"
 
 void LED_Init();
 
@@ -7,10 +7,10 @@ int main(void)
     HAL_Init();
     LED_Init();
 
-    while (true)
+    while (1)
     {
         HAL_GPIO_TogglePin(LED_GPIO_PORT, LED_PIN);
-        HAL_Delay(1000);
+        HAL_Delay(2000);
     }
 }
 
@@ -25,7 +25,7 @@ void LED_Init()
   HAL_GPIO_Init(LED_GPIO_PORT, &GPIO_InitStruct);
 }
 
-void SysTick_Handler(void)
+extern "C" void SysTick_Handler(void)
 {
   HAL_IncTick();
 }
