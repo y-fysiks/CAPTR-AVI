@@ -1,0 +1,3 @@
+[submodule "MCU1/MPU/lib/lsm6ds3tr-c-pid"]
+	path = MCU1/MPU/lib/lsm6ds3tr-c-pid
+	url = https://github.com/STMicroelectronics/lsm6ds3tr-c-pid.git
