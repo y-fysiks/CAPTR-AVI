@@ -1,3 +1,17 @@
+/*
+
+██████ ██████ ██████ ██████ ██████
+██     ██  ██ ██  ██   ██   ██  ██
+██     ██████ ██████   ██   ██████ 
+██     ██  ██ ██       ██   ██ ██  
+██████ ██  ██ ██       ██   ██  ██ 
+
+File: main.hpp
+Auth: Alex Wang, Yubo Wang
+Desc: Header file for PMCU
+
+*/
+
 #ifndef MAIN_H
 #define MAIN_H
 

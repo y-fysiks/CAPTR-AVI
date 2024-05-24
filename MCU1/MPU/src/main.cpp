@@ -1,13 +1,45 @@
+/*
+
+██████ ██████ ██████ ██████ ██████
+██     ██  ██ ██  ██   ██   ██  ██
+██     ██████ ██████   ██   ██████ 
+██     ██  ██ ██       ██   ██ ██  
+██████ ██  ██ ██       ██   ██  ██ 
+
+File: main.cpp
+Auth: Alex Wang, Yubo Wang
+Desc: Main file for PMCU
+
+*/
+
+#include "Arduino.h"
 #include "main.h"
+
+#include "CAPTR_PIN_DRIVER.hpp"
+
+#include "SPI.h"
+
+ControllerState PMCU_state = ControllerState::LV_ON;
+
+// Watchdogs
 
 void setup()
 {
-
+  HwSetupPins();
 }
 
 void loop() 
 {
-  
+  loop_start = micros();
+
+  switch(PMCU_state)
+  {
+    case ControllerState::LV_ON:
+
+    case ControllerState::TVC_UP:
+
+    case ControllerState::TVC_DOWN:
+  }
 }
 
 void LED_Init();
