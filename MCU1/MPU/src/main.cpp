@@ -1,5 +1,15 @@
 #include "main.h"
 
+void setup()
+{
+
+}
+
+void loop() 
+{
+  
+}
+
 void LED_Init();
 
 int main(void)

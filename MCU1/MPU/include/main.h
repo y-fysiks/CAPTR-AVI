@@ -7,4 +7,24 @@
 #define LED_GPIO_PORT                          GPIOA
 #define LED_GPIO_CLK_ENABLE()                  __HAL_RCC_GPIOA_CLK_ENABLE()
 
+enum class ControllerState
+{
+    LV_ON,
+    TVC_UP,
+    RECOVERY,
+    TVC_DOWN,
+    LAND,
+};
+
+enum class ErrorState
+{
+    NONE,
+
+    GENERAL,               
+
+    IMU, 
+    BARO,
+    RF
+};
+
 #endif // MAIN_H
